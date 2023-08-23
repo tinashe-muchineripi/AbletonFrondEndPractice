@@ -1,0 +1,304 @@
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-size: 	62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav {
+    padding: 3em 8em;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    font-size: 3rem;
+}
+
+.bars a{
+    display: flex;
+    align-items: center;
+}
+
+.vertical-bars {
+    display: flex;
+    height: 30px;
+}
+
+.vertical-bars span {
+    content: "";
+    border-right: 1em solid black;
+    padding: .1em;
+}
+
+.horizontal-bars {
+    display: flex;
+    flex-direction: column;
+    width: 28px;
+    margin-left: .2em;
+}
+
+.horizontal-bars span {
+    content: "";
+    border-bottom: 1.2em solid black;
+    padding: 0.2em;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.right a {
+    display: block;
+    font-size: 1.5rem;
+    color: #0000ff;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+    font-size: 3rem;
+    padding: .5em 1em;
+}
+
+.header div a {
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+
+.welcome-section-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    background: url(./assets/pexels-pixabay-164938.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome-section-background header {
+    color: #ff764d;
+    font-size: 10rem;
+}
+
+.section-2 {
+    margin:  3em 400px;
+    font-size: 2.5rem;
+    text-align: justify;
+}
+
+.section-2 h1 {
+    font-size: 2.5rem;
+}
+
+.section-2-images {
+    position: relative;
+}
+
+.section-2-images > img {
+    position: absolute;
+    top: 21%;
+    left: 10%;
+    width: 40%; 
+}
+
+.section-2-images div {
+    background-color: #fbffa7;
+    height: 100vh;
+    width: 60%;
+    margin-left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2-images div > img {
+    height: 300px;
+}
+
+video {
+    width: 47%;
+    margin-left:400px;
+}
+
+.section-3 {
+    position: relative;
+    
+}
+
+.section-3 div {
+    background-color: #b6ffc0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 110vh;
+    width: 60%;
+}
+
+.section-3 div img {
+    width: 40%;
+    max-height: 40%;
+    margin-left: 20%;
+}
+
+.section-3 > img {
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    width: 40%;
+}
+
+.center {
+    width: 80%;
+    margin: auto 10%;
+}
+
+.section-4 {
+    width: 60%;
+    overflow: visible;
+    margin: auto 20%;
+    position: relative;
+    background-color: #d5b3ff;
+    height: 110vh;
+}
+
+.section-4 img:first-child {
+    position: absolute;
+    top: 40%;
+    left: -15%;
+    width: 50%;
+}
+
+.section-4 img:last-child {
+    position:absolute;
+    top: 15%;
+    right: -16%;
+    width: 50%;
+}
+
+.section-5 {
+    display: flex;
+    font-size: 5rem;
+    margin: auto 10%;
+}
+
+.section-5 img {
+    width: 50%;
+}
+
+.section-5 div {
+    background-color: #b1c5ff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5em;
+}
+
+hr {
+    border: 0.05em solid grey;
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+footer {
+    margin: 8% 10%;
+}
+
+footer .footer-header {
+    font-size: 5rem;
+}
+
+footer .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 5em;
+    font-size: 1.5rem;
+}
+
+footer  a {
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1em auto;
+    margin: 0.2em 0;
+    color: black;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+footer p {
+    font-size: 1.5rem;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+    margin: 1em 0;
+}
+
+footer input {
+    padding: 0.5em;
+    outline: none;
+    background-color: lightgrey;
+    border: none;
+    width: 80%;
+    font-size: 1.5rem;
+}
+
+footer label {
+    background-color: #0000ff;
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+footer select {
+    width: 50%;
+    background-color: lightgrey;
+    font-size: 1.5rem;
+    padding: 0.5em;
+    border: none;
+    outline: none;
+}
+
+.language div {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.footer-list {
+    display: flex;
+    gap: 2em;
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 1em 0;
+}
